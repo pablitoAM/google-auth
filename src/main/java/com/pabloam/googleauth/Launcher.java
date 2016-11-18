@@ -14,7 +14,6 @@ public class Launcher {
         }, "Google Auth shutdown hook"));
 
         RestApi restApi = new RestApi();
-
     }
 
 
