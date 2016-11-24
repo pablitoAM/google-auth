@@ -1,0 +1,11 @@
+spring:
+  oauth2:
+    client:
+      clientId: 27732203002-3icc106u2m0v9nel970gud0kq92n7ge6.apps.googleusercontent.com
+      clientSecret: sv7a3lvP02ea9E9YqIMVPhBG
+      accessTokenUri: https://www.googleapis.com/oauth2/v3/token
+      userAuthorizationUri: https://accounts.google.com/o/oauth2/v2/auth
+      clientAuthenticationScheme: query
+    resource:
+      userInfoUri: https://www.googleapis.com/plus/v1/people/me
+      preferTokenInfo: false

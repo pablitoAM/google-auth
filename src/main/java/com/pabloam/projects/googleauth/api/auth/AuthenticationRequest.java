@@ -1,7 +1,6 @@
-package com.pabloam.googleauth.api.auth;
+package com.pabloam.projects.googleauth.api.auth;
 
-import javax.ws.rs.core.UriBuilder;
-import java.util.List;
+import org.springframework.web.util.UriComponentsBuilder;
 
 import static java.util.Optional.ofNullable;
 
@@ -54,7 +53,7 @@ public class AuthenticationRequest {
     }
 
     public String uri(){
-        return UriBuilder.fromPath(BASE_URI)
+        return UriComponentsBuilder.fromPath(BASE_URI)
                     .queryParam("response_type" ,   ofNullable(responseType).orElse(""))
                     .queryParam("client_id"     ,   ofNullable(clientId).orElse(""))
                     .queryParam("redirect_uri"  ,   ofNullable(redirectUri).orElse(""))

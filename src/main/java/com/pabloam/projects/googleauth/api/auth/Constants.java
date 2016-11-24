@@ -1,6 +1,4 @@
-package com.pabloam.googleauth.api.auth;
-
-import java.util.List;
+package com.pabloam.projects.googleauth.api.auth;
 
 public class Constants {
 
